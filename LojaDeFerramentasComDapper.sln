@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaDeFerramentasComDapper.API", "LojaDeFerramentasComDapper.API\LojaDeFerramentasComDapper.API.csproj", "{69DB34A2-3025-4299-A2B1-97DB5D7EE8BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69DB34A2-3025-4299-A2B1-97DB5D7EE8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DB34A2-3025-4299-A2B1-97DB5D7EE8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DB34A2-3025-4299-A2B1-97DB5D7EE8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DB34A2-3025-4299-A2B1-97DB5D7EE8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {416006AA-BCCE-4346-83CA-4F8DC95FA00E}
+	EndGlobalSection
+EndGlobal
