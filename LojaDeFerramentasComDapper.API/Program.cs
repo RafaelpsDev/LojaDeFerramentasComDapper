@@ -1,4 +1,9 @@
 
+using LojaDeFerramentasComDapper.Application.Adapters;
+using LojaDeFerramentasComDapper.Application.Interfaces;
+using LojaDeFerramentasComDapper.Application.Services;
+using LojaDeFerramentasComDapper.Infrastructure.Repository;
+
 namespace LojaDeFerramentasComDapper.API
 {
     public class Program
@@ -8,7 +13,9 @@ namespace LojaDeFerramentasComDapper.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-                        
+            builder.Services.AddScoped<IVendedorAdapter, VendedorAdapter>();
+            builder.Services.AddScoped<IVendedorRepository, VendedorRepository>();
+            builder.Services.AddScoped<IVendedorService, VendedorService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
