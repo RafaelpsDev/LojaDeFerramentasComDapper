@@ -1,0 +1,12 @@
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.deps.json
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.csproj.AssemblyReference.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.AssemblyInfoInputs.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.AssemblyInfo.cs
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.csproj.CoreCompileInputs.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\refint\LojaDeFerramentasComDapper.Domain.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\LojaDeFerramentasComDapper.Domain.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Domain\obj\Debug\net7.0\ref\LojaDeFerramentasComDapper.Domain.dll

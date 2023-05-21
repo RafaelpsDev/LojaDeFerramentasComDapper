@@ -1,0 +1,5 @@
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.csproj.AssemblyReference.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.AssemblyInfoInputs.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.AssemblyInfo.cs
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.csproj.CoreCompileInputs.cache

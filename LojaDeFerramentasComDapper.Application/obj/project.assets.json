@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "LojaDeFerramentasComDapper.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/LojaDeFerramentasComDapper.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LojaDeFerramentasComDapper.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LojaDeFerramentasComDapper.Domain/1.0.0": {
+      "type": "project",
+      "path": "../LojaDeFerramentasComDapper.Domain/LojaDeFerramentasComDapper.Domain.csproj",
+      "msbuildProject": "../LojaDeFerramentasComDapper.Domain/LojaDeFerramentasComDapper.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "LojaDeFerramentasComDapper.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\notec\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\notec\\OneDrive\\Área de Trabalho\\LojaDeFerramentasComDapper\\LojaDeFerramentasComDapper.Domain\\LojaDeFerramentasComDapper.Domain.csproj": {
+              "projectPath": "C:\\Users\\notec\\OneDrive\\Área de Trabalho\\LojaDeFerramentasComDapper\\LojaDeFerramentasComDapper.Domain\\LojaDeFerramentasComDapper.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
