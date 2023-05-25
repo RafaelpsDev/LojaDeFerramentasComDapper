@@ -10,8 +10,8 @@ namespace LojaDeFerramentasComDapper.Domain.Enums
     {
         AguardandoPagamento,
         PagamentoAprovado,
-        EnviadoParaTranspportadora,
-        Aprovado,
+        EnviadoParaTransportadora,
+        Entregue,
         Cancelado
     }
 }

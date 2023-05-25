@@ -22,9 +22,9 @@ namespace LojaDeFerramentasComDapper.Application.Services
         {
             var toModel = _vendedorAdapter.ToVendedorModel(requestVendedorDTO);
 
-            var vendedor = await _vendedorRepository.AdicionarVendedor(toModel);
+            var retorno = await _vendedorRepository.AdicionarVendedor(toModel);
 
-            return vendedor;
+            return retorno;
         }
     }
 }

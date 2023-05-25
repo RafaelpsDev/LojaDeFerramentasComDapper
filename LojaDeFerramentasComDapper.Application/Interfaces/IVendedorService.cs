@@ -10,6 +10,7 @@ namespace LojaDeFerramentasComDapper.Application.Interfaces
 {
     public interface IVendedorService
     {
-        Task<VendedorModel> AdicionarVendedor(RequestVendedorDTO requestVendedorDTO);
+        Task<VendedorModel> AdicionarVendedor(RequestVendedorDTO requestVendedorDTO);       
+
     }
 }

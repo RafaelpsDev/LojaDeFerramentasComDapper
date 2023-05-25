@@ -10,5 +10,6 @@ namespace LojaDeFerramentasComDapper.Application.Interfaces
     public interface IVendedorRepository
     {
         Task<VendedorModel> AdicionarVendedor(VendedorModel vendedorModel);
+        Task<VendedorModel> BuscarVendedorPorId(int id);
     }
 }

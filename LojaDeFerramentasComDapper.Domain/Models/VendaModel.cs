@@ -9,13 +9,18 @@ namespace LojaDeFerramentasComDapper.Domain.Models
 {
     public class VendaModel
     {
-        public int Id { get; set; }                
+        public int Id { get; set; }     
+        public Guid IdPedido { get; set; } = Guid.NewGuid();
         public DateTime DataDaVenda { get; set; } = DateTime.Now;
         public DateTime? DataDeAlteracao { get; set; } = null;
         public StatusEnum StatusDaVenda { get; set; } = StatusEnum.AguardandoPagamento;
         public int IdFerramenta { get; set; }
         public int IdVendedor { get; set; }
-        //public VendedorModel Vendedor { get; set; }
-        //public ICollection<FerramentaModel> Ferramentas { get; set;}
+        public string NomeDoVendedor { get; set; }
+        public string CpfDoVendedor { get; set; }
+        public string EmailDoVendedor { get; set; }
+        public string TelefoneDoVendedor { get; set; }
+        public string NomeDaFerramenta { get; set; }
     }
+     
 }

@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using LojaDeFerramentasComDapper.Application.Interfaces;
 using LojaDeFerramentasComDapper.Domain.Models;
+using LojaDeFerramentasComDapper.Infrastructure.Context.Scripts;
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 
@@ -17,18 +18,25 @@ namespace LojaDeFerramentasComDapper.Infrastructure.Repository
             stringConnection = _configuration.GetConnectionString("ConexaoPadrao");
         }
 
+
         public async Task<VendedorModel> AdicionarVendedor(VendedorModel vendedorModel)
         {
             using var conn = new SqlConnection(stringConnection);
             await conn.OpenAsync();
-            // Inserir o Vendedor
-            string sql = @"
-                    INSERT INTO Vendedor (IdVenda, Nome, Cpf, Email, Telefone)
-                    VALUES (@IdVenda, @Nome, @Cpf, @Email, @Telefone)";
-
-            await conn.ExecuteAsync(sql, vendedorModel);
-            await conn.CloseAsync();
+            
+            int vendedorId = await conn.QuerySingleAsync<int>(VendedorScript.SqlAdicionarVendedor, vendedorModel);
+            vendedorModel.Id = vendedorId;
+            
             return vendedorModel;
+        }
+        public async Task<VendedorModel> BuscarVendedorPorId(int id)
+        {
+            using var conn = new SqlConnection(stringConnection);
+            await conn.OpenAsync();
+            var vendedor = await conn.QueryFirstOrDefaultAsync<VendedorModel>(VendedorScript
+                .SqlBuscarVendedorPorId, new { Id = id });
+            
+            return vendedor;
         }
     }
 }

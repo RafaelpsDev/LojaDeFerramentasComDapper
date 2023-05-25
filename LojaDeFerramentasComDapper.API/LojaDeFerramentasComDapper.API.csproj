@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\LojaDeFerramentasComDapper.Application\LojaDeFerramentasComDapper.Application.csproj" />
+    <ProjectReference Include="..\LojaDeFerramentasComDapper.Infrastructure\LojaDeFerramentasComDapper.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

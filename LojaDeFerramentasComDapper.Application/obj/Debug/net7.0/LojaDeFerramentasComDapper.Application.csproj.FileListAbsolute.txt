@@ -3,3 +3,13 @@ C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerra
 C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.AssemblyInfoInputs.cache
 C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.AssemblyInfo.cs
 C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.csproj.CoreCompileInputs.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\bin\Debug\net7.0\LojaDeFerramentasComDapper.Application.deps.json
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\bin\Debug\net7.0\LojaDeFerramentasComDapper.Application.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\bin\Debug\net7.0\LojaDeFerramentasComDapper.Application.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.csproj.CopyComplete
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\refint\LojaDeFerramentasComDapper.Application.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\LojaDeFerramentasComDapper.Application.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Application\obj\Debug\net7.0\ref\LojaDeFerramentasComDapper.Application.dll

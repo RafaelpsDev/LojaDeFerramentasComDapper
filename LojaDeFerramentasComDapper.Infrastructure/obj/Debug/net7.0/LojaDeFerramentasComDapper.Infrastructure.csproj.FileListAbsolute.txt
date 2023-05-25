@@ -1,0 +1,17 @@
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.deps.json
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Application.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Application.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\bin\Debug\net7.0\LojaDeFerramentasComDapper.Domain.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.AssemblyInfo.cs
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.csproj.CopyComplete
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\refint\LojaDeFerramentasComDapper.Infrastructure.dll
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\LojaDeFerramentasComDapper.Infrastructure.pdb
+C:\Users\notec\OneDrive\Área de Trabalho\LojaDeFerramentasComDapper\LojaDeFerramentasComDapper.Infrastructure\obj\Debug\net7.0\ref\LojaDeFerramentasComDapper.Infrastructure.dll
