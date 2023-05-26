@@ -17,7 +17,6 @@ namespace LojaDeFerramentasComDapper.Tests.Services
     public class VendedorServiceTests
     {
         private readonly Fixture _fixture;
-        private readonly Mock<IVendedorService> _vendedorServiceMock;
         private readonly Mock<IVendedorAdapter> _vendedorAdapterMock;
         private readonly Mock<IVendedorRepository> _vendedorRepositoryMock;
 
@@ -25,7 +24,6 @@ namespace LojaDeFerramentasComDapper.Tests.Services
         {
             _fixture = new Fixture();
             _fixture.OmitirComportamentoRecursivo();
-            _vendedorServiceMock = new Mock<IVendedorService>();
             _vendedorAdapterMock = new Mock<IVendedorAdapter>();
             _vendedorRepositoryMock = new Mock<IVendedorRepository>();
         }

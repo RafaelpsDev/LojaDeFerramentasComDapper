@@ -17,14 +17,12 @@ namespace LojaDeFerramentasComDapper.Tests.Services
     public class FerramentaServiceTests
     {
         private readonly Fixture _fixture;
-        private readonly Mock<IFerramentaService> _ferramentaServiceMock;
         private readonly Mock<IFerramentaAdapter> _ferramentaAdapterMock;
         private readonly Mock<IFerramentaRepository> _ferramentaRepositoryMock;
         public FerramentaServiceTests()
         {
             _fixture = new Fixture();
             _fixture.OmitirComportamentoRecursivo();
-            _ferramentaServiceMock = new Mock<IFerramentaService>();
             _ferramentaAdapterMock = new Mock<IFerramentaAdapter>();
             _ferramentaRepositoryMock = new Mock<IFerramentaRepository>();
         }
