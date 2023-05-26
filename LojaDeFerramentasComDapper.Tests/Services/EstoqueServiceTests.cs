@@ -60,9 +60,35 @@ namespace LojaDeFerramentasComDapper.Tests.Services
 
             retorno.ShouldBeEquivalentTo(estoqueModel);
             _estoqueRepositoryMock.Verify(er => er.AdicionarFerramentaAoEstoque(It.IsAny<EstoqueModel>()), Times.Once);
-
-
         }
 
+        [Fact]
+        public async Task AdicionarFerramentaAoEstoqueTestException()
+        {
+            //Arrenge
+            var idFerramenta = _fixture.Create<int>();
+            var nomeFerramenta = _fixture.Create<string>();
+            var requestEstoqueDTO = _fixture.Create<RequestEstoqueDTO>();
+            var estoqueModel = new EstoqueModel();
+            var ferramentaModel = new FerramentaModel();
+
+            _estoqueAdapterMock.Setup(ea => ea.ToEstoqueModel(requestEstoqueDTO)).Returns(estoqueModel);
+
+            //Act
+            _estoqueRepositoryMock.Setup(er => er.AdicionarFerramentaAoEstoque(
+                It.IsAny<EstoqueModel>())).Returns(Task.FromResult(estoqueModel));
+
+            _ferramentaRepositoryMock
+                .Setup(fr => fr.BuscarFerramentaPorId(idFerramenta, nomeFerramenta)).Returns(Task.FromResult(ferramentaModel));
+
+            //var retorno = await _service.AdicionarFerramentaAoEstoque(requestEstoqueDTO);
+
+            //retorno.ShouldBeEquivalentTo(estoqueModel);
+            
+            var execption = await Assert.ThrowsAsync<Exception>(
+                async () => await _service.AdicionarFerramentaAoEstoque(requestEstoqueDTO));
+
+            Assert.Equal($"A ferramenta: {estoqueModel.IdFerramenta} - {estoqueModel.NomeDaFerramenta} não existe", execption.Message);
+        }
     }
 }
