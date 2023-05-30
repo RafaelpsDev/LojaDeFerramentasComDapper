@@ -6,11 +6,6 @@ using LojaDeFerramentasComDapper.Domain.Models;
 using LojaDeFerramentasComDapper.Tests.Utils;
 using Moq;
 using Shouldly;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LojaDeFerramentasComDapper.Tests.Services
 {
@@ -42,7 +37,8 @@ namespace LojaDeFerramentasComDapper.Tests.Services
             var ferramentaService = new FerramentaService(_ferramentaRepositoryMock.Object, _ferramentaAdapterMock.Object);
 
             var retorno = await ferramentaService.AdicionarFerramenta(requesteFerramentaDTO);
-
+            
+            //Assert
             retorno.ShouldBeEquivalentTo(ferramentaModel);
             _ferramentaRepositoryMock.Verify(fr => fr.AdicionarFerramenta(It.IsAny<FerramentaModel>()), Times.Once());
         }

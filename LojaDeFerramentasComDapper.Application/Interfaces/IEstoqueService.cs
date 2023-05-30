@@ -11,5 +11,6 @@ namespace LojaDeFerramentasComDapper.Application.Interfaces
     public interface IEstoqueService
     {
         Task<EstoqueModel> AdicionarFerramentaAoEstoque(RequestEstoqueDTO requestEstoqueDTO);
+        Task<bool> AtualizarEstoque(int idFerramenta, string nomeDaFerramenta);
     }
 }

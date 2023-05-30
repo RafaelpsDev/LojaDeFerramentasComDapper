@@ -11,6 +11,8 @@ namespace LojaDeFerramentasComDapper.Application.Interfaces
     public interface IVendaAdapter
     {
         public VendaModel ToVendaModel(RequestVendaDTO requestVendaDTO);
+        public VendaModel ToVendaModelUpdate(RequestVendaUpdateDTO requestVendaUpdateDTO);
         public ResponseVendaDTO ToResponseVendaDTO(VendaModel vendaModel);
+
     }
 }

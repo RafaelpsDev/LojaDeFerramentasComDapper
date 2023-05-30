@@ -71,9 +71,9 @@ namespace LojaDeFerramentasComDapper.API.Controllers
 
         [HttpPut]
         [Route("/AtualizarStatusDaVenda")]
-        public async Task<ActionResult> AtualizarStatusDaVenda(int id, [FromBody] StatusEnum StatusVenda)
+        public async Task<ActionResult> AtualizarStatusDaVenda(int id, [FromBody] RequestVendaUpdateDTO requestVendaUpdateDTO)
         {
-            var venda = await _vendaService.AtualizaStatusDeVenda(id, StatusVenda);
+            var venda = await _vendaService.AtualizaStatusDeVenda(id, requestVendaUpdateDTO);
             return Ok(venda);
         }
     }

@@ -6,11 +6,6 @@ using LojaDeFerramentasComDapper.Domain.Models;
 using LojaDeFerramentasComDapper.Tests.Utils;
 using Moq;
 using Shouldly;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LojaDeFerramentasComDapper.Tests.Services
 {
@@ -81,14 +76,45 @@ namespace LojaDeFerramentasComDapper.Tests.Services
             _ferramentaRepositoryMock
                 .Setup(fr => fr.BuscarFerramentaPorId(idFerramenta, nomeFerramenta)).Returns(Task.FromResult(ferramentaModel));
 
-            //var retorno = await _service.AdicionarFerramentaAoEstoque(requestEstoqueDTO);
-
-            //retorno.ShouldBeEquivalentTo(estoqueModel);
-            
             var execption = await Assert.ThrowsAsync<Exception>(
                 async () => await _service.AdicionarFerramentaAoEstoque(requestEstoqueDTO));
 
+            //Assert
             Assert.Equal($"A ferramenta: {estoqueModel.IdFerramenta} - {estoqueModel.NomeDaFerramenta} não existe", execption.Message);
+        }
+        [Fact]
+        public async Task AtualizarEstoqueTestSucesso()
+        {
+            //Arrange
+            var ferramentaModel = _fixture.Create<FerramentaModel>();
+            var idFerramenta = _fixture.Create<int>();
+            var nomeDaFerramenta = _fixture.Create<string>();
+            var retornoEsperado = _fixture.Create<bool>();
+            retornoEsperado = true;
+
+            _estoqueRepositoryMock.Setup(er => er.AtualizarEstoque(idFerramenta, nomeDaFerramenta)).Returns(Task.FromResult(retornoEsperado));
+
+            _ferramentaRepositoryMock.Setup(fr => fr.BuscarFerramentaPorId(idFerramenta, nomeDaFerramenta))
+                .Returns(Task.FromResult(ferramentaModel));
+            //Act
+            var retorno = await _service.AtualizarEstoque(idFerramenta, nomeDaFerramenta);
+
+            //Assert
+            retorno.ShouldBeEquivalentTo(retornoEsperado);
+        }
+        [Fact]
+        public async Task AtualizarEstoqueTestException()
+        {
+            //Arrange
+            int idFerramenta = 0;
+            string nomeDaFerramenta = _fixture.Create<string>();
+            var ferramentaModel = new FerramentaModel();
+
+            //Act
+            var execption = await Assert.ThrowsAsync<Exception>(async () => await _service.AtualizarEstoque(idFerramenta, nomeDaFerramenta));
+
+            //Assert
+            Assert.Equal("A ferramenta informada não existe.", execption.Message);
         }
     }
 }

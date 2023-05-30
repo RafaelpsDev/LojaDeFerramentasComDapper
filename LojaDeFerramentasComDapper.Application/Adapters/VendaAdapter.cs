@@ -18,7 +18,6 @@ namespace LojaDeFerramentasComDapper.Application.Adapters
                 StatusEnum.EnviadoParaTransportadora => "Enviado para a Transportadora",
                 StatusEnum.Entregue => "Entregue",
                 StatusEnum.Cancelado => "Cancelado",
-                // Adicione mais casos para outros valores do enum, se necessário
                 _ => "",
             };
             return new ResponseVendaDTO
@@ -42,6 +41,14 @@ namespace LojaDeFerramentasComDapper.Application.Adapters
             {
                 IdVendedor = requestVendaDTO.IdVendedor,
                 IdFerramenta = requestVendaDTO.IdFerramenta
+            };
+        }
+
+        public VendaModel ToVendaModelUpdate(RequestVendaUpdateDTO requestVendaUpdateDTO)
+        {
+            return new VendaModel
+            {
+                StatusDaVenda = requestVendaUpdateDTO.StatusDaVenda
             };
         }
     }

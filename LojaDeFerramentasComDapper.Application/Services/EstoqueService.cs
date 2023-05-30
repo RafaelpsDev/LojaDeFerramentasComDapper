@@ -31,5 +31,13 @@ namespace LojaDeFerramentasComDapper.Application.Services
             var estoque = await _estoqueRepository.AdicionarFerramentaAoEstoque(toEstoqueModel);
             return estoque;
         }
+
+        public async Task<bool> AtualizarEstoque(int idFerramenta, string nomeDaFerramenta)
+        {
+            var ferramenta = await _ferramentaRepository.BuscarFerramentaPorId(idFerramenta, nomeDaFerramenta);
+            if (ferramenta == null) throw new Exception("A ferramenta informada não existe.");
+            await _estoqueRepository.AtualizarEstoque(ferramenta.Id, ferramenta.Nome);
+            return true;
+        }
     }
 }

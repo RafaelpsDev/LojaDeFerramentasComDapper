@@ -35,11 +35,12 @@ namespace LojaDeFerramentasComDapper.Infrastructure.Repository
             return estoqueModel;
         }
 
-        public async Task<bool> AtualizarEstoque(int idFerramenta)
+        public async Task<bool> AtualizarEstoque(int idFerramenta, string nomeDaFerramenta)
         {
             using var conn = new SqlConnection(connectionString);
             await conn.OpenAsync();
-            await conn.ExecuteAsync(EstoqueScript.SqlAtualizarEstoque, new { IdFerramenta = idFerramenta });
+            await conn.ExecuteAsync(EstoqueScript.SqlAtualizarEstoque, 
+                new { IdFerramenta = idFerramenta, NomeDaFerramenta = nomeDaFerramenta });
             return true;
         }
     }

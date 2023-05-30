@@ -11,6 +11,6 @@ namespace LojaDeFerramentasComDapper.Application.Interfaces
     {
         Task<VendaModel> RegistrarVenda(VendaModel vendaModel);
         Task<VendaModel> BuscarVendaPorId(int id);
-        Task<VendaModel> AtualizarStatusDaVenda(int id, int statusVenda);
+        Task<VendaModel> AtualizarStatusDaVenda(int id, VendaModel vendaModel);
     }
 }

@@ -1,11 +1,4 @@
-﻿using LojaDeFerramentasComDapper.Application.DTOs;
-using LojaDeFerramentasComDapper.Application.Interfaces;
-using LojaDeFerramentasComDapper.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LojaDeFerramentasComDapper.Domain.Enums;
 
 namespace LojaDeFerramentasComDapper.Application.Services
 {

@@ -13,6 +13,6 @@ namespace LojaDeFerramentasComDapper.Application.Interfaces
     {
         Task<VendaModel> RegistrarVenda(RequestVendaDTO requestVendaDTO);
         Task<ResponseVendaDTO> BuscarVendaPorId(int id);
-        Task<ResponseVendaDTO> AtualizaStatusDeVenda(int id, StatusEnum statusVenda);
+        Task<ResponseVendaDTO> AtualizaStatusDeVenda(int id, RequestVendaUpdateDTO requestVendaUpdateDTO);
     }
 }

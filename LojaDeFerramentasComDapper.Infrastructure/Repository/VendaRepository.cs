@@ -22,8 +22,9 @@ namespace LojaDeFerramentasComDapper.Infrastructure.Repository
             stringConnection = _configuration.GetConnectionString("ConexaoPadrao");
         }
 
-        public async Task<VendaModel> AtualizarStatusDaVenda(int id, int statusVenda)
+        public async Task<VendaModel> AtualizarStatusDaVenda(int id, VendaModel vendaModel)
         {
+            var statusVenda = vendaModel.StatusDaVenda;
             using var conn = new SqlConnection(stringConnection);
             conn.Open();
             var venda = await conn.QuerySingleAsync<VendaModel>(VendaScript.SqlAtualizarStatusDaVenda, new { Id = id, StatusDaVenda = statusVenda }) ;

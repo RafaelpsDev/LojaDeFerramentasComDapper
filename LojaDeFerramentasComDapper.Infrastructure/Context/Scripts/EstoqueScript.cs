@@ -19,7 +19,10 @@ namespace LojaDeFerramentasComDapper.Infrastructure.Context.Scripts
         public static string SqlAtualizarEstoque 
         { get 
             {
-                return @"UPDATE TB_ESTOQUE SET QUANTIDADE = QUANTIDADE - 1 WHERE ID_FERRAMENTA = @IdFerramenta";
+                return @"UPDATE TB_ESTOQUE 
+                            SET QUANTIDADE = QUANTIDADE - 1 
+                         WHERE ID_FERRAMENTA = @IdFerramenta
+                            AND NOME_FERRAMENTA = @NomeDaFerramenta";
             } 
         }
     }
