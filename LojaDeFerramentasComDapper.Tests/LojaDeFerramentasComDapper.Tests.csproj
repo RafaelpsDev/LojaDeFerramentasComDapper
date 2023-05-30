@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LojaDeFerramentasComDapper.API\LojaDeFerramentasComDapper.API.csproj" />
     <ProjectReference Include="..\LojaDeFerramentasComDapper.Application\LojaDeFerramentasComDapper.Application.csproj" />
   </ItemGroup>
 

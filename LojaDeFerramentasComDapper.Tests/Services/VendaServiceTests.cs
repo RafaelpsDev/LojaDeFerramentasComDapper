@@ -4,6 +4,7 @@ using LojaDeFerramentasComDapper.Application.Interfaces;
 using LojaDeFerramentasComDapper.Application.Services;
 using LojaDeFerramentasComDapper.Domain.Enums;
 using LojaDeFerramentasComDapper.Domain.Models;
+using LojaDeFerramentasComDapper.Tests.Utils;
 using Moq;
 using Shouldly;
 using System;
@@ -25,6 +26,7 @@ namespace LojaDeFerramentasComDapper.Tests.Services
         public VendaServiceTests()
         {
             _fixture = new Fixture();
+            _fixture.OmitirComportamentoRecursivo();
             _vendaAdapterMock = new Mock<IVendaAdapter>();
             _vendaRepositoryMock = new Mock<IVendaRepository>();
             _estoqueServiceMock = new Mock<IEstoqueService>();
